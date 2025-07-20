@@ -33,10 +33,31 @@ const ContactSection = () => {
       return;
     }
 
-    // Here you would typically send the form data to your backend
+    // Create email content
+    const emailSubject = `Recovery Request: ${formData.recoveryType}`;
+    const emailBody = `
+New Recovery Request:
+
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Recovery Type: ${formData.recoveryType}
+
+Message:
+${formData.message}
+
+Submitted at: ${new Date().toLocaleString()}
+    `;
+
+    // Create mailto link
+    const mailtoLink = `mailto:Customerchatsupport@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+    
+    // Open email client
+    window.location.href = mailtoLink;
+
     toast({
-      title: "Recovery Request Submitted",
-      description: "Thank you! Our team will review your case and contact you within 24 hours.",
+      title: "Recovery Request Prepared",
+      description: "Your email client will open to send the request. Please send the email to complete your submission.",
     });
 
     // Reset form
@@ -83,7 +104,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <div className="font-semibold text-card-foreground">Email Support</div>
-                    <div className="text-muted-foreground">support@encryptedrecovery.com</div>
+                    <div className="text-muted-foreground">Customerchatsupport@gmail.com</div>
                   </div>
                 </div>
                 
@@ -93,7 +114,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <div className="font-semibold text-card-foreground">Phone Support</div>
-                    <div className="text-muted-foreground">+1 813 296-9978</div>
+                    <div className="text-muted-foreground">+1 218 208 2317</div>
                   </div>
                 </div>
               </CardContent>
