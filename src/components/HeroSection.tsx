@@ -3,10 +3,10 @@ import { Bitcoin, Shield, Lock, Unlock } from "lucide-react";
 import heroBannerAbstract from "@/assets/hero-banner-abstract.jpg";
 
 const HeroSection = () => {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+  const openCustomerSupport = () => {
+    // Open JivoChat widget
+    if ((window as any).jivo_api) {
+      (window as any).jivo_api.open();
     }
   };
 
@@ -57,7 +57,7 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 size="lg"
-                onClick={() => scrollToSection('contact')}
+                onClick={openCustomerSupport}
                 className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg"
               >
                 RECOVER MY FUNDS
@@ -65,7 +65,7 @@ const HeroSection = () => {
               <Button 
                 size="lg"
                 variant="outline"
-                onClick={() => scrollToSection('about')}
+                onClick={openCustomerSupport}
                 className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-4 text-lg"
               >
                 LEARN MORE
@@ -78,22 +78,22 @@ const HeroSection = () => {
             <div className="relative w-full h-96 flex items-center justify-center">
               <div className="absolute inset-0 bg-gradient-primary rounded-full opacity-20 animate-glow"></div>
               <div className="grid grid-cols-2 gap-8 z-10">
-                <div className="p-6 bg-card rounded-xl border border-crypto-border shadow-card">
+                <button onClick={openCustomerSupport} className="p-6 bg-card rounded-xl border border-crypto-border shadow-card hover:shadow-glow transition-all duration-300 hover:scale-105">
                   <Bitcoin className="h-12 w-12 text-primary mb-4" />
                   <h3 className="font-semibold text-card-foreground">Crypto Recovery</h3>
-                </div>
-                <div className="p-6 bg-card rounded-xl border border-crypto-border shadow-card">
+                </button>
+                <button onClick={openCustomerSupport} className="p-6 bg-card rounded-xl border border-crypto-border shadow-card hover:shadow-glow transition-all duration-300 hover:scale-105">
                   <Shield className="h-12 w-12 text-primary mb-4" />
                   <h3 className="font-semibold text-card-foreground">Fraud Investigation</h3>
-                </div>
-                <div className="p-6 bg-card rounded-xl border border-crypto-border shadow-card">
+                </button>
+                <button onClick={openCustomerSupport} className="p-6 bg-card rounded-xl border border-crypto-border shadow-card hover:shadow-glow transition-all duration-300 hover:scale-105">
                   <Lock className="h-12 w-12 text-primary mb-4" />
                   <h3 className="font-semibold text-card-foreground">Scam Recovery</h3>
-                </div>
-                <div className="p-6 bg-card rounded-xl border border-crypto-border shadow-card">
+                </button>
+                <button onClick={openCustomerSupport} className="p-6 bg-card rounded-xl border border-crypto-border shadow-card hover:shadow-glow transition-all duration-300 hover:scale-105">
                   <Unlock className="h-12 w-12 text-primary mb-4" />
                   <h3 className="font-semibold text-card-foreground">Asset Recovery</h3>
-                </div>
+                </button>
               </div>
             </div>
           </div>

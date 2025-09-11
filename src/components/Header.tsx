@@ -13,6 +13,14 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
+  const openCustomerSupport = () => {
+    // Open JivoChat widget
+    if ((window as any).jivo_api) {
+      (window as any).jivo_api.open();
+    }
+    setIsMenuOpen(false);
+  };
+
   return (
     <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-crypto-border z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -52,7 +60,7 @@ const Header = () => {
               Testimonials
             </button>
             <Button 
-              onClick={() => scrollToSection('contact')}
+              onClick={openCustomerSupport}
               className="bg-primary hover:bg-primary/90 text-primary-foreground"
             >
               CONTACT US
@@ -101,7 +109,7 @@ const Header = () => {
                 Testimonials
               </button>
               <Button 
-                onClick={() => scrollToSection('contact')}
+                onClick={openCustomerSupport}
                 className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
               >
                 CONTACT US
