@@ -1,22 +1,23 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Star, Cpu, Users2, HandCoins } from "lucide-react";
+import officerReturningFunds from "@/assets/officer-returning-funds.jpg";
 
 const WhyChooseSection = () => {
   const reasons = [
     {
       icon: Star,
-      title: "Industry Pioneers",
-      description: "The first and most trusted name in cryptocurrency recovery with years of proven success."
+      title: "Industry Leaders",
+      description: "The most trusted name in crime recovery with years of proven success and law enforcement partnerships."
     },
     {
       icon: Cpu,
-      title: "Proprietary Technology", 
-      description: "Exclusive recovery methods developed by our team of blockchain security experts."
+      title: "Advanced Investigation", 
+      description: "Professional investigative methods and forensic techniques developed by our expert team."
     },
     {
       icon: Users2,
       title: "Expert Team",
-      description: "Cryptographers, forensic specialists, and blockchain analysts with decades of combined experience."
+      description: "Former law enforcement officers, financial investigators, and forensic specialists with decades of experience."
     },
     {
       icon: HandCoins,
@@ -29,10 +30,18 @@ const WhyChooseSection = () => {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose Encrypted Recovery</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose Anti Crime Recovery</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            We stand apart from the competition with our proven track record and innovative approach to cryptocurrency recovery.
+            We stand apart from the competition with our proven track record and professional approach to crime recovery.
           </p>
+          
+          <div className="mt-12 mb-8">
+            <img 
+              src={officerReturningFunds} 
+              alt="Officer returns recovered funds to a victim with a receipt"
+              className="w-full max-w-2xl mx-auto h-80 object-cover rounded-lg shadow-card"
+            />
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

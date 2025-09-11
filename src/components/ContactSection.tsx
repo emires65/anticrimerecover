@@ -8,6 +8,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Checkbox } from "@/components/ui/checkbox";
 import { Mail, Phone, Shield, Clock } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import officerTakingReport from "@/assets/officer-taking-report.jpg";
+import femaleOfficerTablet from "@/assets/female-officer-tablet.jpg";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -88,6 +90,23 @@ Submitted at: ${new Date().toLocaleString()}
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Our team of recovery specialists is ready to evaluate your case and provide a confidential consultation.
           </p>
+          
+          <div className="grid md:grid-cols-2 gap-8 mt-12 mb-8">
+            <div>
+              <img 
+                src={officerTakingReport} 
+                alt="Officer records a crime report at the station front desk"
+                className="w-full h-64 object-cover rounded-lg shadow-card"
+              />
+            </div>
+            <div>
+              <img 
+                src={femaleOfficerTablet} 
+                alt="Female officer reviews a newly submitted case on a tablet"
+                className="w-full h-64 object-cover rounded-lg shadow-card"
+              />
+            </div>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">

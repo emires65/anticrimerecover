@@ -1,5 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Key, ShieldAlert, Building, AlertTriangle, CreditCard, Search } from "lucide-react";
+import agentsArrest from "@/assets/agents-arrest-scammer.jpg";
+import handcuffsEvidence from "@/assets/handcuffs-evidence.jpg";
 
 const ServicesSection = () => {
   const services = [
@@ -43,6 +45,23 @@ const ServicesSection = () => {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Comprehensive crime investigation and asset recovery solutions for victims of fraud, scams, and financial crimes.
           </p>
+          
+          <div className="grid md:grid-cols-2 gap-8 mt-12 mb-8">
+            <div>
+              <img 
+                src={agentsArrest} 
+                alt="Agents apprehend a cyber scammer in a late-night office raid"
+                className="w-full h-64 object-cover rounded-lg shadow-card"
+              />
+            </div>
+            <div>
+              <img 
+                src={handcuffsEvidence} 
+                alt="A suspect's hands in handcuffs beside case evidence"
+                className="w-full h-64 object-cover rounded-lg shadow-card"
+              />
+            </div>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
