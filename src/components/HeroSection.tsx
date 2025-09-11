@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Bitcoin, Shield, Lock, Unlock } from "lucide-react";
+import heroBannerAbstract from "@/assets/hero-banner-abstract.jpg";
 
 const HeroSection = () => {
   const scrollToSection = (id: string) => {
@@ -11,6 +12,15 @@ const HeroSection = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center bg-gradient-hero overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 opacity-20">
+        <img 
+          src={heroBannerAbstract} 
+          alt="Abstract protection motif with shield, lock, and network"
+          className="w-full h-full object-cover"
+        />
+      </div>
+      
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 animate-glow">
@@ -32,16 +42,16 @@ const HeroSection = () => {
           {/* Content */}
           <div className="space-y-8 animate-fade-in">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              Recover Your Lost{" "}
-              <span className="text-primary">Cryptocurrency</span>
+              Recover Your{" "}
+              <span className="text-primary">Stolen Assets</span>
             </h1>
             
             <h2 className="text-xl md:text-2xl text-primary font-semibold">
-              The Premier Solution for Cryptocurrency Recovery
+              Professional Scam & Fraud Recovery Service
             </h2>
             
             <p className="text-lg text-muted-foreground max-w-2xl">
-              We specialize in recovering stolen, locked, or misplaced cryptocurrency funds with industry-leading success rates.
+              We specialize in recovering stolen funds from scams, fraud, and cybercrime with our expert investigation team and proven recovery methods.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -70,19 +80,19 @@ const HeroSection = () => {
               <div className="grid grid-cols-2 gap-8 z-10">
                 <div className="p-6 bg-card rounded-xl border border-crypto-border shadow-card">
                   <Bitcoin className="h-12 w-12 text-primary mb-4" />
-                  <h3 className="font-semibold text-card-foreground">Bitcoin Recovery</h3>
+                  <h3 className="font-semibold text-card-foreground">Crypto Recovery</h3>
                 </div>
                 <div className="p-6 bg-card rounded-xl border border-crypto-border shadow-card">
                   <Shield className="h-12 w-12 text-primary mb-4" />
-                  <h3 className="font-semibold text-card-foreground">Secure Process</h3>
+                  <h3 className="font-semibold text-card-foreground">Fraud Investigation</h3>
                 </div>
                 <div className="p-6 bg-card rounded-xl border border-crypto-border shadow-card">
                   <Lock className="h-12 w-12 text-primary mb-4" />
-                  <h3 className="font-semibold text-card-foreground">Lost Keys</h3>
+                  <h3 className="font-semibold text-card-foreground">Scam Recovery</h3>
                 </div>
                 <div className="p-6 bg-card rounded-xl border border-crypto-border shadow-card">
                   <Unlock className="h-12 w-12 text-primary mb-4" />
-                  <h3 className="font-semibold text-card-foreground">Fund Recovery</h3>
+                  <h3 className="font-semibold text-card-foreground">Asset Recovery</h3>
                 </div>
               </div>
             </div>

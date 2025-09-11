@@ -22,7 +22,7 @@ const Header = () => {
             <div className="p-2 bg-gradient-primary rounded-lg">
               <Shield className="h-6 w-6 text-primary-foreground" />
             </div>
-            <span className="text-xl font-bold text-foreground">Encrypted Recovery</span>
+            <span className="text-xl font-bold text-foreground">Anti Crime Recovery</span>
           </div>
 
           {/* Desktop Navigation */}

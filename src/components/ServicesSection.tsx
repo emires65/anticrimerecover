@@ -5,33 +5,33 @@ const ServicesSection = () => {
   const services = [
     {
       icon: Key,
-      title: "Lost Key Recovery",
-      description: "Recover access to wallets with lost or forgotten private keys and passwords."
+      title: "Identity Theft Recovery",
+      description: "Recover accounts and funds compromised through identity theft and unauthorized access."
     },
     {
       icon: ShieldAlert,
-      title: "Theft Recovery", 
-      description: "Track and recover cryptocurrency stolen through hacks, phishing, or other malicious activities."
+      title: "Fraud Investigation", 
+      description: "Investigate and recover assets stolen through various fraud schemes and scams."
     },
     {
       icon: Building,
-      title: "Exchange Issues",
-      description: "Resolve issues with exchanges including frozen accounts and failed transactions."
+      title: "Investment Scams",
+      description: "Specialized recovery of funds lost to fake investment platforms and Ponzi schemes."
     },
     {
       icon: AlertTriangle,
-      title: "Scam Recovery",
-      description: "Specialized techniques to recover funds lost to investment scams and fraudulent schemes."
+      title: "Romance Scams",
+      description: "Recover money lost to romance scams and online dating fraud schemes."
     },
     {
       icon: CreditCard,
-      title: "Banking Recovery", 
-      description: "Recover traditional banking funds lost through wire fraud or unauthorized transfers."
+      title: "Banking Fraud", 
+      description: "Recover funds lost through wire fraud, unauthorized transfers, and banking scams."
     },
     {
       icon: Search,
-      title: "Forensic Analysis",
-      description: "Advanced blockchain forensics to trace and recover misplaced or stolen digital assets."
+      title: "Crypto Recovery",
+      description: "Advanced blockchain forensics to trace and recover stolen or misplaced cryptocurrency."
     }
   ];
 
@@ -41,7 +41,7 @@ const ServicesSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-card-foreground">Our Services</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive cryptocurrency and digital asset recovery solutions tailored to your specific needs.
+            Comprehensive crime investigation and asset recovery solutions for victims of fraud, scams, and financial crimes.
           </p>
         </div>
 
