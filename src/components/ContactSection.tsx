@@ -52,7 +52,7 @@ Submitted at: ${new Date().toLocaleString()}
     `;
 
     // Create mailto link
-    const mailtoLink = `mailto:Customerchatsupport@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+    const mailtoLink = `mailto:support@antiscamrecovery.site?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
     
     // Open email client
     window.location.href = mailtoLink;
@@ -123,7 +123,7 @@ Submitted at: ${new Date().toLocaleString()}
                   </div>
                   <div>
                     <div className="font-semibold text-card-foreground">Email Support</div>
-                    <div className="text-muted-foreground">Customerchatsupport@gmail.com</div>
+                    <div className="text-muted-foreground">support@antiscamrecovery.site</div>
                   </div>
                 </div>
                 
@@ -133,7 +133,7 @@ Submitted at: ${new Date().toLocaleString()}
                   </div>
                   <div>
                     <div className="font-semibold text-card-foreground">Phone Support</div>
-                    <div className="text-muted-foreground">+1 218 208 2317</div>
+                    <div className="text-muted-foreground">+18156008181</div>
                   </div>
                 </div>
               </CardContent>
